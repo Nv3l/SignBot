@@ -10,7 +10,12 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 import time
 import requests
+
+# File that contain dictionary of the creditentials
 import creditential as crd
+
+# File that descrease any number in a range of 10 to 0 %
+import randomise10Purcent as r10p
 
 # account credentials
 username = crd.creditentials["username"]
@@ -97,13 +102,13 @@ for x in range(i):
                     actions = ActionChains(driver)
                     canvas = driver.find_element_by_xpath("/html/body/app-root/app-signature/app-default/div/div[2]/div/div/div[2]/div/signature-pad/canvas")
                     actions.click_and_hold(canvas)
-                    actions.move_by_offset(150, 5)
-                    actions.move_by_offset(-170, 20)
-                    actions.move_by_offset(220, 22)
-                    actions.move_by_offset(-250, 20)
-                    actions.move_by_offset(190, 23)
-                    actions.move_by_offset(-200, 18)
-                    actions.move_by_offset(300, -200)
+                    actions.move_by_offset(r10p.randomise10Purcent(150), r10p.randomise10Purcent(5))
+                    actions.move_by_offset(r10p.randomise10Purcent(-170), r10p.randomise10Purcent(20))
+                    actions.move_by_offset(r10p.randomise10Purcent(220), r10p.randomise10Purcent(22))
+                    actions.move_by_offset(r10p.randomise10Purcent(-250), r10p.randomise10Purcent(20))
+                    actions.move_by_offset(r10p.randomise10Purcent(190), r10p.randomise10Purcent(23))
+                    actions.move_by_offset(r10p.randomise10Purcent(-200), r10p.randomise10Purcent(18))
+                    actions.move_by_offset(r10p.randomise10Purcent(300), r10p.randomise10Purcent(-200))
                     actions.release()
                     actions.perform()
                     time.sleep(10)
