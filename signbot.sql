@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 10 mai 2021 à 07:21
--- Version du serveur :  5.7.31
--- Version de PHP : 7.3.21
+-- Généré le :  lun. 10 mai 2021 à 07:27
+-- Version du serveur :  10.4.10-MariaDB
+-- Version de PHP :  7.4.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -18,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de données : `signbot`
+-- Base de données :  `signbot`
 --
 
 -- --------------------------------------------------------
@@ -30,14 +31,15 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(25) NOT NULL,
-  `FirstName` varchar(25) NOT NULL,
-  `PersonnalEmail` varchar(255) NOT NULL,
-  `SchoolEmail` varchar(255) NOT NULL,
-  `Phone` varchar(10) DEFAULT NULL,
-  `Password` varchar(40) NOT NULL,
-  `Signature` tinyint(3) NOT NULL,
-  `Created_At` datetime(6) NOT NULL,
+  `name` varchar(25) NOT NULL,
+  `first_name` varchar(25) NOT NULL,
+  `personnal_email` varchar(255) NOT NULL,
+  `school_email` varchar(255) NOT NULL,
+  `phone` varchar(10) DEFAULT NULL,
+  `password` varchar(40) NOT NULL,
+  `signature` tinyint(3) NOT NULL,
+  `created_at` datetime(6) NOT NULL,
+  `updated_at` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 COMMIT;
