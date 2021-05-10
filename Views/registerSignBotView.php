@@ -26,7 +26,7 @@
       <div class="bloc-mise-en-page">
       <canvas id="canvas"></canvas>
       </div>
-      <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer</button>
+      <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</button>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Envoyer</button>
