@@ -18,8 +18,7 @@
       <input placeholder="Your Phone Number (optional)" id="phone" type="tel" tabindex="5" required>
     </fieldset>
     <fieldset>
-    <input placeholder="Your password" type="password"  id="password" tabindex="6" name="password"
-           minlength="8" required>
+    <input placeholder="Your password" type="password"  id="password" tabindex="6" name="password" minlength="8" required>
     </fieldset>
 
     <fieldset>
