@@ -29,6 +29,7 @@ function connectUser($email, $password) {
             $_SESSION['id'] = $checkUser['id'];
             $_SESSION['email'] = $email;
             $_SESSION['firstname'] = $checkUser['first_name'];
+            $_SESSION['email_jsec'] = $checkUser['email_jsec'];
             $_SESSION['connected'] = true;
 
             header('location: index.php');

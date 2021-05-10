@@ -44,10 +44,9 @@ function registerJSEC($email_jsec, $password_jsec, $signature_jsec) {
 
     $registerJSEC = $db->prepare("UPDATE users SET email_jsec = :email_jsec, password_jsec = :password_jsec, signature_jsec = :signature_jsec, updated_at = :updated_at WHERE id = :id");
 
-    date_default_timezone_set('Europe/Paris');
-
     $passwordHash_jsec = password_hash($password_jsec, PASSWORD_DEFAULT);
 
+    date_default_timezone_set('Europe/Paris');
 
     $registerJSEC->execute([
         'email_jsec' => $email_jsec,
@@ -55,12 +54,17 @@ function registerJSEC($email_jsec, $password_jsec, $signature_jsec) {
         'signature_jsec' => $signature_jsec,
         'updated_at' => date('Y-m-d H:i:s'),
         'id' => $_SESSION['id'],
-    ]);    
+    ]) or die(print_r($registerJSEC->errorInfo()));    
+
+    $_SESSION['email_jsec'] = $email_jsec;
+
 
     header('location: registerSignBot.php?finalRegister');
 
 
 }
+
+
 
 
 ?>

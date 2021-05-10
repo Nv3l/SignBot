@@ -35,7 +35,8 @@ if(isset($_GET['changeEmailJeSuisEnCours'])) {
       <div class="container">  
         <form id="contact" action="" method="post">
           <h3>Mettre à jour l'adresse email JeSuisEnCours</h3>
-          <p>Adresse actuelle : <?php echo($_SESSION['email']); ?> </p>
+          <p>Adresse actuelle : <?php echo($_SESSION['email_jsec']); ?> </p>
+        
         <fieldset>
           <input placeholder="Nouvelle adresse" id="email" type="email" tabindex="3" required>
         </fieldset>
@@ -66,14 +67,15 @@ if(isset($_GET['changePasswordJeSuisEnCours'])) {
 if(isset($_GET['changePersonnalInfoSignBot'])) {
   ?>
   <div class="container">
-    <form id="contact" action="" method="post">
+    <form id="contact" action="account.php" method="post" onsubmit="return confirm('Etes vous sur de vouloir valider ?');">
       <h3>Changez vos informations personnelles</h3>
       <fieldset>
-        <input placeholder="Modifier votre nom" id="name" type="text" tabindex="1" required autofocus>
+        <input placeholder="Modifier votre nom" name="name" id="name" type="text" tabindex="1" required autofocus>
       </fieldset>
       <fieldset>
-        <input placeholder="Modifier votre prénom" id="firstname" type="text" tabindex="2" required autofocus>
+        <input placeholder="Modifier votre prénom" name="first_name" id="first_name" type="text" tabindex="2" required autofocus>
       </fieldset>
+      <button name="submit-personnal-informations" type="submit" id="submit-personnal-informations" data-submit="...Sending">Envoyer</button>
     </form>
     </div>
 <?php
@@ -86,11 +88,12 @@ if(isset($_GET['changeEmailSignBot'])) {
     <form id="contact" action="" method="post">
       <h3>Mettre à jour l'adresse email SignBot</h3>
         <fieldset>
-          <input placeholder="Adresse actuelle" id="email" type="email" tabindex="3" required>
+          <p>Adresse actuelle : <?php echo($_SESSION['email']); ?> </p>
         </fieldset>
         <fieldset>
           <input placeholder="Nouvelle adresse" id="email" type="email" tabindex="3" required>
         </fieldset>
+  
     </form>
     </div>
 <?php
