@@ -28,8 +28,8 @@
             <li><a href="#">Tutoriel</a></li>
             <li><a href="registerSignBot.php">Formulaire</a></li>
             <li><a href="account.php">Mon compte</a></li>
-            <li><button class="login-button" href="#">Login</button></li>
-            <li><button class="join-button" href="#">Sign In</button></li>
+            <li><a class="login-button" href="#">Login</a></li>
+            <li><a class="join-button" href="#">Sign In</a></li>
         </ul>
     </nav>
     <script src="nav.js"></script>

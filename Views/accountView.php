@@ -25,32 +25,39 @@
 <div>
   <ul>
     <li>
-      <a href="changeEmailJeSuisEnCours.php">Modifier mon adresse mail (JeSuisEnCours)</a>
+      <a href="account.php?changeEmailJeSuisEnCours">Modifier mon adresse mail (JeSuisEnCours)</a>
     </li>
     <li>
-      <a href="changePasswordJeSuisEnCours.php">Modifier mon mot de passe (JeSuisEnCours)</a>
+      <a href="registerSignBot?changePasswordJeSuisEnCours">Modifier mon mot de passe (JeSuisEnCours)</a>
     </li>
     <li>
-      <a href="changeInfoJeSuisEnCours.php">Modifier vos informations personnels(JeSuisEnCours)</a>
+      <a href="registerSignBot?changeInfoJeSuisEnCours">Modifier vos informations personnels(JeSuisEnCours)</a>
     </li>
     <li>
-      <a href="changeEmailSignBot.php">Modifier mon adresse mail (SignBot)</a>
+      <a href="registerSignBot?changeEmailSignBot">Modifier mon adresse mail (SignBot)</a>
     </li>
     <li>
-      <a href="changePasswordSignBot.php">Modifier mon mot de passe (SignBot)</a>
+      <a href="registerSignBot?changePasswordSignBot">Modifier mon mot de passe (SignBot)</a>
     </li>
   </ul>
 </div>
 
+<?php
 
-<div class="container">  
-  <form id="contact" action="" method="post">
-    <h3>Modifier les informations de votre compte JeSuisEnCours</h3>
-    <fieldset>
-      <input placeholder='Modifier votre adresse mail "Je Suis En Cours"' id="schoolemail" type="email" tabindex="4" required>
-    </fieldset>
-    <fieldset>
-    <input placeholder='Modifier votre mot de passe "Je Suis En Cours"' type="password"  id="password" tabindex="6" name="password"minlength="8" required>
-    </fieldset>
-  </form>
-</div>
+if(isset($_GET['changeEmailJeSuisEnCours'])) {
+
+    ?>
+      <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Modifier les informations de votre compte JeSuisEnCours</h3>
+          <fieldset>
+            <input placeholder='Modifier votre adresse mail "Je Suis En Cours"' id="schoolemail" type="email" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+          <input placeholder='Modifier votre mot de passe "Je Suis En Cours"' type="password"  id="password" tabindex="6" name="password"minlength="8" required>
+          </fieldset>
+        </form>
+      </div>
+    <?php
+};
+
