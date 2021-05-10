@@ -21,7 +21,6 @@
     <fieldset>
       <input placeholder="Your password" type="password"  id="password" tabindex="6" name="password" minlength="8" required>
     </fieldset>
-    <h4>Desinnez votre signature</h4>
     <fieldset class="signature">
       <div class="bloc-mise-en-page">
       <canvas id="canvas"></canvas>
