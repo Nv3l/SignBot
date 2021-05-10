@@ -23,7 +23,7 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">Accueil</a></li>
+            <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Tutoriel</a></li>
             <li><a href="registerSignBot.php">Formulaire</a></li>
             <li><a href="#">Mon compte</a></li>
