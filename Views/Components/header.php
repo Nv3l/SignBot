@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="Assets/CSS/color.css">
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/CSS/navbar.css">
+    <link rel="stylesheet" href="Assets/CSS/registerSignBot.css">
     <script type="text/javascript" src="Assets/JavaScript/navbar.js"></script>
     <script type="text/javascript" src="Assets/JavaScript/signature.js"></script>
 </head>
