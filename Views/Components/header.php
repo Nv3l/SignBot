@@ -26,7 +26,7 @@
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Tutoriel</a></li>
             <li><a href="registerSignBot.php">Formulaire</a></li>
-            <li><a href="#">Mon compte</a></li>
+            <li><a href="account.php">Mon compte</a></li>
             <li><button class="login-button" href="#">Login</button></li>
             <li><button class="join-button" href="#">Sign In</button></li>
         </ul>
