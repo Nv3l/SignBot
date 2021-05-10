@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php if (isset($title)) { echo $title; } else { echo 'SignBot'; } ?></title>
+    <link rel="stylesheet" href="Assets/CSS/color.css">
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/CSS/navbar.css">
     <script type="text/javascript" src="Assets/JavaScript/navbar.js"></script>
