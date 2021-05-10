@@ -22,7 +22,7 @@
         <ul class="nav-links">
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Tutoriel</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="registerSignBot.php">Formulaire</a></li>
             <li><a href="#">Contact Us</a></li>
             <li><button class="login-button" href="#">Login</button></li>
             <li><button class="join-button" href="#">Sign In</button></li>
