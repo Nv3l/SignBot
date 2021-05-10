@@ -30,8 +30,10 @@ body {
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact input[type="password"],
-#contact textarea,
-#contact button[type="submit"] {
+#contact textarea, 
+#contact button[type="submit"],
+#contact button[type="button"]
+ {
   font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
 }
 
@@ -54,6 +56,7 @@ body {
   display: block;
   font-size: 13px;
   font-weight: 400;
+  color: red;
 }
 
 fieldset {
@@ -93,7 +96,8 @@ fieldset {
   resize: none;
 }
 
-#contact button[type="submit"] {
+#contact button[type="submit"]
+ {
   cursor: pointer;
   width: 100%;
   border: none;
@@ -104,14 +108,28 @@ fieldset {
   font-size: 15px;
 }
 
-#contact button[type="submit"]:hover {
+#contact button[type="button"]
+{
+    cursor: pointer;
+    width: 50%;
+    border: none;
+    background: #4CAF50;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+  }
+
+#contact button[type="submit"]:hover,
+#contact button[type="button"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
+#contact button[type="submit"]:active,
+#contact button[type="button"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -140,3 +158,29 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
+
+.signature {
+    text-align: center;
+}
+
+#canvas{
+    width:300px;
+    height:200px;
+    border:1px solid #000;
+    /*
+    position :absolute;
+    top:10px;
+    */
+  }
+  #capture{ 
+    border:1px solid grey;
+    width:200px;
+    height:150px;
+  }
+  
+  /* MISE EN PAGE*/
+  .mise-en-page{}
+  .bloc-mise-en-page{
+    margin:10px;
+    flex:1 0 0px;   
+  }
