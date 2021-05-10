@@ -25,7 +25,7 @@
       <div class="bloc-mise-en-page">
       <canvas id="canvas"></canvas>
       </div>
-      <button name="clear" type="button" id="clear-button"><span id="bt-clear">nettoyer</span></button>
+      <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer</button>
     </fieldset>
     <fieldset>
       <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Submit</button>
