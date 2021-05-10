@@ -35,9 +35,7 @@ if(isset($_GET['changeEmailJeSuisEnCours'])) {
       <div class="container">  
         <form id="contact" action="" method="post">
           <h3>Mettre à jour l'adresse email JeSuisEnCours</h3>
-          <fieldset>
-          <input placeholder="Adresse actuelle" id="email" type="email" tabindex="3" required>
-        </fieldset>
+          <p>Adresse actuelle : <?php echo($_SESSION['email']); ?> </p>
         <fieldset>
           <input placeholder="Nouvelle adresse" id="email" type="email" tabindex="3" required>
         </fieldset>
