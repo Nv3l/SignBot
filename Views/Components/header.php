@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="Assets/CSS/style.css">
     <link rel="stylesheet" href="Assets/CSS/navbar.css">
     <script type="text/javascript" src="Assets/JavaScript/navbar.js"></script>
+    <script type="text/javascript" src="Assets/JavaScript/signature.js"></script>
 </head>
 <body>
     <nav>
@@ -24,7 +25,7 @@
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Tutoriel</a></li>
             <li><a href="registerSignBot.php">Formulaire</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Mon compte</a></li>
             <li><button class="login-button" href="#">Login</button></li>
             <li><button class="join-button" href="#">Sign In</button></li>
         </ul>
