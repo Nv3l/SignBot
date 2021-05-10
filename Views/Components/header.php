@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+require 'Functions/database.fn.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

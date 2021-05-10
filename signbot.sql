@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 10 mai 2021 à 07:27
+-- Généré le :  lun. 10 mai 2021 à 09:53
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -32,16 +32,17 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(25) NOT NULL,
-  `first_name` varchar(25) NOT NULL,
-  `personnal_email` varchar(255) NOT NULL,
-  `school_email` varchar(255) NOT NULL,
-  `phone` varchar(10) DEFAULT NULL,
-  `password` varchar(40) NOT NULL,
-  `signature` tinyint(3) NOT NULL,
-  `created_at` datetime(6) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `phone` varchar(20) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `email_jsec` varchar(255) NOT NULL,
+  `password_jsec` varchar(255) NOT NULL,
+  `signature_jsec` varchar(255) NOT NULL,
+  `created_at` varchar(255) NOT NULL,
   `updated_at` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
