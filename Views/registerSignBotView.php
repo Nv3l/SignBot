@@ -22,9 +22,9 @@
       <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="schoolemail" type="email" tabindex="4" required>
     </fieldset>
     <fieldset>
-      <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-      <input placeholder="Confirmation" id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
-      <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
+      <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password_one" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+      <input placeholder="Confirmation" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+      <input type="checkbox" onclick="passwordShowFirstForm()">Montrer mon mot de passe</input>
     </fieldset>
     <h4>Dessinnez votre signature</h4>
     <fieldset class="signature">

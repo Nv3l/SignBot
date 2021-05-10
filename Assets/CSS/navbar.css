@@ -8,6 +8,11 @@
 body{
     overflow-x: hidden;
 }
+
+a:link {
+    text-decoration: none;
+}
+
 nav{
     height: 6rem;
     width: 100vw;

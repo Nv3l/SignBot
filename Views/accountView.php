@@ -7,8 +7,8 @@
 
 </section>
 
-<div>
-  <ul>
+<div class="account-settings">
+  <ul class="account-settings-list">
     <li>
       <a href="account.php?changeEmailJeSuisEnCours">Modifier mon adresse mail (JeSuisEnCours)</a>
     </li>
@@ -35,11 +35,11 @@ if(isset($_GET['changeEmailJeSuisEnCours'])) {
         <form id="contact" action="" method="post">
           <h3>Modifier les informations de votre compte JeSuisEnCours</h3>
           <fieldset>
-            <input placeholder='Modifier votre adresse mail "Je Suis En Cours"' id="schoolemail" type="email" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-          <input placeholder='Modifier votre mot de passe "Je Suis En Cours"' type="password"  id="password" tabindex="6" name="password"minlength="8" required>
-          </fieldset>
+          <input placeholder="Votre adresse email actuelle" id="email" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Votre nouvelle adresse email" id="email" type="email" tabindex="3" required>
+        </fieldset>
         </form>
       </div>
     <?php
@@ -50,12 +50,13 @@ if(isset($_GET['changePasswordJeSuisEnCours'])) {
   <div class="container">
     <form id="contact" action="" method="post">
       <h3>Modifier votre mot de passe JeSuisEnCours</h3>
-        <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="schoolemail" type="email" tabindex="4" required>
-      </fieldset>
       <fieldset>
-        <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-        <input placeholder="Confirmation" id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
-        <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
+        <input placeholder="Votre mot de passe actuel" id="password_one" name="password" type="password" required>
+        <br>
+        <br>
+        <input placeholder="Votre nouveau mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
+        <input placeholder="Confirmation" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+        <input type="checkbox" onclick="passwordShowJeSuisEnCours()">Montrer mon mot de passe</input>
       </fieldset>
     </form>
     </div>
@@ -86,7 +87,7 @@ if(isset($_GET['changeEmailSignBot'])) {
     <form id="contact" action="" method="post">
       <h3>Modifier votre adresse email SignBot</h3>
         <fieldset>
-          <input placeholder="Modifier votre adresse email actuelle" id="email" type="email" tabindex="3" required>
+          <input placeholder="Votre adresse email actuelle" id="email" type="email" tabindex="3" required>
         </fieldset>
         <fieldset>
           <input placeholder="Votre nouvelle adresse email" id="email" type="email" tabindex="3" required>
@@ -101,12 +102,14 @@ if(isset($_GET['changePasswordSignBot'])) {
    <div class="container">
     <form id="contact" action="" method="post">
       <h3>Modifier votre mot de passe SignBot</h3>
-        <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="schoolemail" type="email" tabindex="4" required>
-      </fieldset>
+      
       <fieldset>
-        <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-        <input placeholder="Confirmation" id="password_two" name="password_two" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
-        <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
+        <input placeholder="Votre mot de passe actuel" id="password_one" name="password" type="password" required>
+        <br>
+        <br>
+        <input placeholder="Votre nouveau mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
+        <input placeholder="Confirmation" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+        <input type="checkbox" onclick="passwordShowSignBot()">Montrer mon mot de passe</input>
       </fieldset>
     </form>
     </div>
