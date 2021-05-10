@@ -1,6 +1,6 @@
 <div class="container">  
   <form id="contact" action="" method="post">
-    <h3>Modifier vos informations</h3>
+    <h3>Modifier les informations de votre compte SignBot</h3>
     <fieldset>
       <input placeholder="Modifier votre nom" id="name" type="text" tabindex="1" required autofocus>
     </fieldset>
@@ -17,13 +17,40 @@
       <input placeholder="Modifier votre numéro de téléphone" id="phone" type="tel" tabindex="5" required>
     </fieldset>
     <fieldset>
+      <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+<div>
+  <ul>
+    <li>
+      <a href="changeEmailJeSuisEnCours.php">Modifier mon adresse mail (JeSuisEnCours)</a>
+    </li>
+    <li>
+      <a href="changePasswordJeSuisEnCours.php">Modifier mon mot de passe (JeSuisEnCours)</a>
+    </li>
+    <li>
+      <a href="changeInfoJeSuisEnCours.php">Modifier vos informations personnels(JeSuisEnCours)</a>
+    </li>
+    <li>
+      <a href="changeEmailSignBot.php">Modifier mon adresse mail (SignBot)</a>
+    </li>
+    <li>
+      <a href="changePasswordSignBot.php">Modifier mon mot de passe (SignBot)</a>
+    </li>
+  </ul>
+</div>
+
+
+<div class="container">  
+  <form id="contact" action="" method="post">
+    <h3>Modifier les informations de votre compte JeSuisEnCours</h3>
+    <fieldset>
       <input placeholder='Modifier votre adresse mail "Je Suis En Cours"' id="schoolemail" type="email" tabindex="4" required>
     </fieldset>
     <fieldset>
     <input placeholder='Modifier votre mot de passe "Je Suis En Cours"' type="password"  id="password" tabindex="6" name="password"minlength="8" required>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Submit</button>
     </fieldset>
   </form>
 </div>

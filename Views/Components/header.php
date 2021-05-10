@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="Assets/CSS/registerSignBot.css">
     <script type="text/javascript" src="Assets/JavaScript/navbar.js"></script>
     <script type="text/javascript" src="Assets/JavaScript/signature.js"></script>
+    <script type="text/javascript" src="Assets/JavaScript/showPassword.js"></script>
 </head>
 <body>
     <nav>

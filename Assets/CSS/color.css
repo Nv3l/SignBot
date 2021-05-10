@@ -60,6 +60,11 @@ body {
     border-color: var(--grey);
 }
 
+input[type="checkbox"]:checked:before {
+	left: calc(100% - 19px);
+	background-color: var(--green);
+}
+
 ::-webkit-input-placeholder {
     color: var(--grey);
 }
