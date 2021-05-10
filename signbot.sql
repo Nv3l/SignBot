@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 10 mai 2021 à 07:16
+-- Généré le : lun. 10 mai 2021 à 07:21
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -36,8 +36,8 @@ CREATE TABLE IF NOT EXISTS `users` (
   `SchoolEmail` varchar(255) NOT NULL,
   `Phone` varchar(10) DEFAULT NULL,
   `Password` varchar(40) NOT NULL,
-  `Signature` int(11) NOT NULL,
-  `Created_At` int(11) NOT NULL,
+  `Signature` tinyint(3) NOT NULL,
+  `Created_At` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4;
 COMMIT;
