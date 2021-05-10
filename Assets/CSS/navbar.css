@@ -35,7 +35,7 @@ nav{
     list-style: none; 
     width: 88vw;
     padding: 0 0.7vw;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
 }
@@ -48,16 +48,6 @@ nav{
 }
 .nav-links li {
     position: relative;
-}
-.nav-links li a::before {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 0%;
-    background-color: #61DAFB;
-    position: absolute;
-    transition: all ease-in-out 250ms;
-    margin: 0 0 0 10%;
 }
 .nav-links li a:hover::before{
     width: 80%;
