@@ -1,0 +1,23 @@
+.account {
+    width: 100px;
+    height: fit-content;
+    background-color: red;
+}
+
+
+.account-settings {
+    background-color: purple;
+}
+
+.account-settings-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.account-settings-items {
+    font-size: 15px;
+    color: white;
+}

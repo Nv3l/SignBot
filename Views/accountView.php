@@ -1,43 +1,29 @@
-<div class="container">  
-  <form id="contact" action="" method="post">
-    <h3>Modifier les informations de votre compte SignBot</h3>
-    <fieldset>
-      <input placeholder="Modifier votre nom" id="name" type="text" tabindex="1" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Modifier votre prénom" id="firstname" type="text" tabindex="2" required autofocus>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Modifier votre adresse mail" id="email" type="email" tabindex="3" required>
-    </fieldset>
-    <fieldset>
-    <input placeholder="Modifier votre mot de passe" type="password"  id="password" tabindex="6" name="password"minlength="8" required>
-    </fieldset>
-    <fieldset>
-      <input placeholder="Modifier votre numéro de téléphone" id="phone" type="tel" tabindex="5" required>
-    </fieldset>
-    <fieldset>
-      <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Submit</button>
-    </fieldset>
-  </form>
-</div>
+<section class="account">
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>test</h1>
+<h2>pzeofjpzoejf</h2>
+<h3></h3>
+</section>
 
-<div>
-  <ul>
+<div class="account-settings">
+  <ul class="account-settings-list">
     <li>
-      <a href="account.php?changeEmailJeSuisEnCours">Modifier mon adresse mail (JeSuisEnCours)</a>
+      <a class="account-settings-items" href="account.php?changePersonnalInfoSignBot">Modifier vos informations personnels(SignBot)</a>
     </li>
     <li>
-      <a href="registerSignBot?changePasswordJeSuisEnCours">Modifier mon mot de passe (JeSuisEnCours)</a>
+      <a class="account-settings-items" href="account.php?changeEmailSignBot">Modifier mon adresse mail (SignBot)</a>
     </li>
     <li>
-      <a href="registerSignBot?changeInfoJeSuisEnCours">Modifier vos informations personnels(JeSuisEnCours)</a>
+      <a class="account-settings-items" href="account.php?changePasswordSignBot">Modifier mon mot de passe (SignBot)</a>
     </li>
     <li>
-      <a href="registerSignBot?changeEmailSignBot">Modifier mon adresse mail (SignBot)</a>
+      <a class="account-settings-items" href="account.php?changeEmailJeSuisEnCours">Modifier mon adresse mail (JeSuisEnCours)</a>
     </li>
     <li>
-      <a href="registerSignBot?changePasswordSignBot">Modifier mon mot de passe (SignBot)</a>
+      <a class="account-settings-items" href="account.php?changePasswordJeSuisEnCours">Modifier mon mot de passe (JeSuisEnCours)</a>
     </li>
   </ul>
 </div>
@@ -45,19 +31,90 @@
 <?php
 
 if(isset($_GET['changeEmailJeSuisEnCours'])) {
-
     ?>
       <div class="container">  
         <form id="contact" action="" method="post">
-          <h3>Modifier les informations de votre compte JeSuisEnCours</h3>
+          <h3>Mettre à jour l'adresse email JeSuisEnCours</h3>
           <fieldset>
-            <input placeholder='Modifier votre adresse mail "Je Suis En Cours"' id="schoolemail" type="email" tabindex="4" required>
-          </fieldset>
-          <fieldset>
-          <input placeholder='Modifier votre mot de passe "Je Suis En Cours"' type="password"  id="password" tabindex="6" name="password"minlength="8" required>
-          </fieldset>
+          <input placeholder="Adresse actuelle" id="email" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Nouvelle adresse" id="email" type="email" tabindex="3" required>
+        </fieldset>
         </form>
       </div>
     <?php
 };
+
+if(isset($_GET['changePasswordJeSuisEnCours'])) {
+  ?>
+  <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Changez de mot de passe JeSuisEnCours</h3>
+      <fieldset>
+        <input placeholder="Mot de passe actuel" id="password_one" name="password" type="password" required>
+        <br>
+        <br>
+        <input placeholder="Nouveau mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
+        <input placeholder="Confirmer le mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+        <input type="checkbox" onclick="passwordShowJeSuisEnCours()">Montrer mon mot de passe</input>
+      </fieldset>
+    </form>
+    </div>
+<?php
+};
+
+
+if(isset($_GET['changePersonnalInfoSignBot'])) {
+  ?>
+  <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Changez vos informations personnelles</h3>
+      <fieldset>
+        <input placeholder="Modifier votre nom" id="name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Modifier votre prénom" id="firstname" type="text" tabindex="2" required autofocus>
+      </fieldset>
+    </form>
+    </div>
+<?php
+};
+
+
+if(isset($_GET['changeEmailSignBot'])) {
+  ?>
+  <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Mettre à jour l'adresse email SignBot</h3>
+        <fieldset>
+          <input placeholder="Adresse actuelle" id="email" type="email" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Nouvelle adresse" id="email" type="email" tabindex="3" required>
+        </fieldset>
+    </form>
+    </div>
+<?php
+};
+
+if(isset($_GET['changePasswordSignBot'])) {
+  ?>
+   <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Changez de mot de passe SignBot</h3>
+      
+      <fieldset>
+        <input placeholder="Mot de passe actuel" id="password_one" name="password" type="password" required>
+        <br>
+        <br>
+        <input placeholder="Mouveau mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" required>
+        <input placeholder="Confirmer le mot de passe" id="password_two" name="password" type="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+        <input type="checkbox" onclick="passwordShowSignBot()">Montrer mon mot de passe</input>
+      </fieldset>
+    </form>
+    </div>
+<?php
+};
+
 
