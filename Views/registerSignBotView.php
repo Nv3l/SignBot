@@ -29,7 +29,7 @@
       <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer</button>
     </fieldset>
     <fieldset>
-      <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Submit</button>
+      <button name="submit" type="submit" id="submit-button" data-submit="...Sending">Envoyer</button>
     </fieldset>
   </form>
 </div>
