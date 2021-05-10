@@ -36,7 +36,9 @@ require 'Functions/database.fn.php';
             <li><a href="index.php">Accueil</a></li>
             <li><a href="#">Tutoriel</a></li>
             <li><a href="registerSignBot.php">Formulaire</a></li>
+            <?php if (isset($_SESSION['connected'])) { ?>
             <li><a href="account.php">Mon compte</a></li>
+            <?php }?>
             <?php if (isset($_SESSION['connected'])) {
                     ?> <li><a class="login-button" href="logout.php">Logout</a></li> <?php
                 } else {
