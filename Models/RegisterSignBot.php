@@ -59,12 +59,23 @@ function registerJSEC($email_jsec, $password_jsec, $signature_jsec) {
     $_SESSION['email_jsec'] = $email_jsec;
 
 
-    header('location: registerSignBot.php?finalRegister');
-
+    header('location: registerSignBot.php?registerSign');
 
 }
 
+function saveSignature($signature) {
 
+    define('UPLOAD_DIR', 'Signature/');
+
+    $signature = str_replace('data:image/png;base64,', '', $signature);  
+    $signature = str_replace(' ', '+', $signature);  
+
+    $data = base64_decode($signature); 
+
+    $file = UPLOAD_DIR . $_SESSION['id'] . '.png';  
+    $success = file_put_contents($file, $data);
+
+}
 
 
 ?>
