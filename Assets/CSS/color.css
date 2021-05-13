@@ -35,14 +35,17 @@ body {
 }
 
 .border-color-red {
+    border: solid 1px;
     border-color: var(--red) !important;
 }
 
 .border-color-salmon {
+    border: solid 1px;
     border-color: var(--salmon);
 }
 
 .border-color-black {
+    border: solid 1px;
     border-color: var(--black);
 }
 
