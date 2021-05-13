@@ -1,9 +1,13 @@
 
 .indexpage {
-    width: 50%;
+    background-image: url(../Pictures/robot.png);
+    background-position: right 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
     height: 100vh;
-    background-color: rgb(130, 201, 248);
 }
+
 
 h3.loginpage {
     font-size: 25px;
@@ -24,18 +28,15 @@ h3.loginpage {
     flex-direction: column;
   }
 
-  .password-form {
-    padding-top: 40px;
-  }
 
-  .email-input, .password-input {
+  .email-input, .password-input, .phone-input, .name-input, .firstname-input{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
     align-items: center;
   }
 
-  .email-icon, .password-icon {
+  .email-icon, .password-icon, .phone-icon, .name-icon, .firstname-icon {
     width: 30px;
     height: 30px;
     margin-right: 10px;
@@ -43,45 +44,33 @@ h3.loginpage {
 
   input{
     border: solid 1px;
-    border-color: grey;
     padding:15px 20px;
     border-radius:25px;
     width: 100%;
-    background-color: white;
   } 
 
-  .loginSignInButton {
+  .loginsigninbutton {
     padding-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
-  .LoginButton {
-    border: solid 1px;
-    border-color: grey;
+  .loginbutton {
     padding: 15px 20px;
     border-radius: 40px;
     width: 50%;
     height: 50%;
-    background-color: rgb(235, 107, 107);
     margin-right: 50px;
     cursor: pointer;
   }
 
-  .SignInButton {
-    border: solid 1px;
-    border-color: grey;
+  .signinbutton {
     padding: 15px 20px;
     border-radius: 40px;
     width: 50%;
     height: 50%;
-    background-color: rgb(235, 107, 107);
     cursor: pointer;
-  }
-
-  .SignIn {      
-    color: black;
   }
 
 
