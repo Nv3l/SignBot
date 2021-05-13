@@ -36,6 +36,14 @@ body {
     background-color: white;
 }
 
+.bloc-mise-en-page {
+    background-color: var(--white);
+}
+
+canvas {
+    background-color: none;
+}
+
 /* ========== NAV BAR ========== */
 nav {
     color: var(--white);

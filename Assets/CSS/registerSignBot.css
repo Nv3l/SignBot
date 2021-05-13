@@ -27,7 +27,14 @@ h3.registerpage {
   padding: 15px 20px;
   border-radius: 40px;
   width: 50%;
-  height: 50%;
-  margin-right: 50px;
-  cursor: pointer;
+  height: 100vh;
+  background-color: rgb(130, 201, 248);
+  padding-top: 10em;
+}
+
+.bloc-mise-en-page {
+  border: solid 1px;
+  width: 200px;
+  height: 150px;
+  margin: 20px;
 }
