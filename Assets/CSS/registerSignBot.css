@@ -28,17 +28,32 @@ h3.registerpage {
 .registerbutton {
   padding: 15px 20px;
   border-radius: 40px;
+  height: 50%;
+  width: 50%;
+  cursor: pointer;
+}
+
+.backupbutton {
+  padding: 15px 20px;
+  border-radius: 40px;
   width: 50%;
   height: 50%;
   margin-right: 50px;
   cursor: pointer;
+  }
+
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bloc-mise-en-page {
   border: solid 1px;
-  width: 100%;
-  height: auto;
-  margin: 20px;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 5px;
   border-radius: 20px;
   border-color: grey;
 }
@@ -48,3 +63,5 @@ h3.registerpage {
   color: grey;
   font-size: 15px;
 }
+
+

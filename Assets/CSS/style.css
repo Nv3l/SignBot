@@ -54,6 +54,7 @@ h3.loginpage {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
   }
 
   .loginbutton {

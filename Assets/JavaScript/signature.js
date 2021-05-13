@@ -53,8 +53,8 @@ function moveDrawligne(oEvent){
   function initCanvas(){
     var oCanvas = document.getElementById("canvas");
     oCanvas.bDraw = false;
-    oCanvas.width =  384;
-    oCanvas.height = 149;
+    oCanvas.width =  400;
+    oCanvas.height = 200;
     oCtx = oCanvas.getContext('2d'); 
     oCanvas.addEventListener("mousedown", downDrawligne);
     oCanvas.addEventListener("mouseup", upDrawligne);

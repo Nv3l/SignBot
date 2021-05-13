@@ -40,18 +40,18 @@
 
         <?php } elseif(isset($_GET['registerSign']) && $_SESSION['registerStatus'] == "JSEC done") { ?>
 
-            <h4>Dessinnez votre signature</h4>
+            <h3 class="registerpage">Dessinez votre signature</h3>
             <div class="signature">
               <div class="bloc-mise-en-page">
                 <canvas id="canvas"></canvas>
               </div>
+
               <p class="signatureclean" id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</p>
                 
-                
-
-                <div class="loginsigninbutton">
-                  <button class="signinbutton border-red SignIn red" name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
-                </div>
+              <div class="loginsigninbutton">
+                  <button class="backupbutton border-red"><a class="SignIn red" href="">Retour</a></button>
+                  <button class="registerbutton border-red white red-background" name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+              </div>
 
           <?php } elseif(isset($_GET['finalRegister']) && $_SESSION['registerStatus'] == "DONE") {?>
             
