@@ -41,8 +41,6 @@ require 'Functions/database.fn.php';
                 } else {
                     ?> <li><a class="login-button" href="login.php">Login</a></li> <?php
                 }?>
-            
-            <li><a class="join-button" href="#">Sign In</a></li>
         </ul>
     </nav>
     <script src="nav.js"></script>
