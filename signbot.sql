@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 10 mai 2021 à 11:54
+-- Généré le :  jeu. 13 mai 2021 à 11:42
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.4.0
 
@@ -39,6 +39,7 @@ CREATE TABLE IF NOT EXISTS `users` (
   `email_jsec` varchar(255) DEFAULT NULL,
   `password_jsec` varchar(255) DEFAULT NULL,
   `signature_jsec` varchar(255) DEFAULT NULL,
+  `register_done` varchar(255) NOT NULL,
   `created_at` varchar(255) NOT NULL,
   `updated_at` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
