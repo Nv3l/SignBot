@@ -33,7 +33,7 @@
                 <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
               </div>
 
-              <div>
+              <div class="loginsigninbutton">
                 <button class="registerbutton border-red white red-background" name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Suivant</button>
               </div>
             </form>
@@ -45,9 +45,13 @@
               <div class="bloc-mise-en-page">
                 <canvas id="canvas"></canvas>
               </div>
-              <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</button>
-            </div>
-            <button name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+              <p class="signatureclean" id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</p>
+                
+                
+
+                <div class="loginsigninbutton">
+                  <button class="signinbutton border-red SignIn red" name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+                </div>
 
           <?php } elseif(isset($_GET['finalRegister']) && $_SESSION['registerStatus'] == "DONE") {?>
             

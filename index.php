@@ -1,6 +1,6 @@
 <?php
 
-$title = "SignBot - Acceuil";
+$title = "SignBot - Accueil";
 
 require 'Views/Components/header.php';
 

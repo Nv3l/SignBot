@@ -1,27 +1,29 @@
 .registerpage {
   width: 100%;
-  height: fit-content;
+  height: 100vh;
 }
 
 h3.registerpage {
   font-size: 25px;
   font-weight: bold;
   padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
 }
 
-
 .register-container {
-  position: fixed;
+  position: absolute;
   top: 30%;
   left: 25%;
   margin-top: -100px;
   margin-left: -200px;
+  width: 20%;
 }
 
 .firstname-form, .email-form, .phone-form, .password-form {
   padding-top: 20px;
 }
-
 
 .registerbutton {
   padding: 15px 20px;
@@ -34,7 +36,15 @@ h3.registerpage {
 
 .bloc-mise-en-page {
   border: solid 1px;
-  width: 200px;
-  height: 150px;
+  width: 100%;
+  height: auto;
   margin: 20px;
+  border-radius: 20px;
+  border-color: grey;
+}
+
+.signatureclean {
+  cursor: pointer;
+  color: grey;
+  font-size: 15px;
 }
