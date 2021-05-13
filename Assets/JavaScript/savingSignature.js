@@ -11,7 +11,7 @@ $(function(){
                         SignBase64: imgsrc
                     }
                 }).done(function(o) {
-                    window.location.replace("http://localhost/SignBot/registerSignBot.php?finalRegister");
+                    window.location.replace("http://localhost/SignBot/index.php?finalRegister");
                     console.log('saved');
                 }); 
             }  

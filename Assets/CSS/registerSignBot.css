@@ -4,3 +4,10 @@
   background-color: rgb(130, 201, 248);
   padding-top: 10em;
 }
+
+.bloc-mise-en-page {
+  border: solid 1px;
+  width: 200px;
+  height: 150px;
+  margin: 20px;
+}

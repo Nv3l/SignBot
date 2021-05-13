@@ -8,7 +8,7 @@
         <?php if(isset($_GET['registerJSEC']) && $_SESSION['registerStatus'] == "personal info done") { ?>
 
             <form id="registerJSEC" action="RegisterSignBot.php" method="post">
-              <h4>Informations de votre compte scolaire de messagerie</h4>
+              <h4>Informations de votre compte de messagerie "Je Suis En Cours"</h4>
               <div>
                 <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="email_JSEC" name="email_JSEC" type="email_JSEC" tabindex="1" required>
               </div>
