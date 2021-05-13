@@ -22,7 +22,7 @@ if(isset($_POST['submit-registerSignBot'])) {
 if(isset($_POST['submit-registerJSEC'])) {
 
     if(isset($_POST['email_JSEC']) && isset($_POST['password_two_JSEC'])) {
-        registerJSEC($_POST['email_JSEC'], $_POST['password_two_JSEC'], "Signature/" . $_SESSION['id'] . ".png");
+        registerJSEC($_POST['email_JSEC'], $_POST['password_two_JSEC']);
     }
 }
 

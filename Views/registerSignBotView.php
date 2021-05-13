@@ -1,6 +1,8 @@
+<div class="container">
 
 <section class="registerpage">
 
+        <?php if(isset($_GET['registerJSEC']) && $_SESSION['registerStatus'] == "personal info done") { ?>
 
 <div class="register-container">  
 
@@ -20,16 +22,12 @@
     </div>
   </form>
 
-<?php } else if(isset($_GET['registerSign'])) { ?>
+          } elseif($_SESSION['registerStatus'] == "personal info done") {
+            header("location: registerSignBot.php?registerJSEC");
+            
+          } ?>
 
-  <h4>Dessinnez votre signature</h4>
-  <div class="signature">
-    <div class="bloc-mise-en-page">
-      <canvas id="canvas"></canvas>
-    </div>
-    <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</button>
-  </div>
-  <button name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+        <?php } else { ?>
 
 <?php } else { ?>
   <form id="registerSignBot" action="RegisterSignBot.php" method="post">

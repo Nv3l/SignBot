@@ -30,6 +30,7 @@ function connectUser($email, $password) {
             $_SESSION['email'] = $email;
             $_SESSION['firstname'] = $checkUser['first_name'];
             $_SESSION['email_jsec'] = $checkUser['email_jsec'];
+            $_SESSION['registerStatus'] = $checkUser['register_done'];
             $_SESSION['connected'] = true;
 
             header('location: index.php');
