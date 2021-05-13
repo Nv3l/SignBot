@@ -1,5 +1,5 @@
 
-<section class="indexpage white-background">
+<section class="indexpage background-color-white">
 
 <div class="login-container">
     <form id="submit-login" action="Login.php" method="post">
@@ -20,22 +20,11 @@
             </div>
             </div>
         <div class="loginsigninbutton">
-            <button class="loginbutton border-red background-red-button white" name="submit-login" type="submit" id="submit-login" data-submit="...Sending">Connexion</button>
-            <button class="signinbutton border-red"><a class="SignIn red" href="registerSignBot.php">Inscription</a></button>
+            <button class="loginbutton border-color-salmon background-color-salmon color-white" name="submit-login" type="submit" id="submit-login" data-submit="...Sending">Connexion</button>
+            <button class="signinbutton border-color-salmon"><a class="SignIn color-salmon" href="registerSignBot.php">Inscription</a></button>
         </div>
     </form>
 </div>
-
-<?php
-
-if(isset($_SESSION['connected'])) {
-
-    echo("OUAIS TU EST CONNECTE !");
-    echo($_SESSION['firstname']);
-}
-
-?>
-
 
 <?php
 
@@ -109,9 +98,8 @@ if(isset($_GET['signIn'])) {
 
 <?php
 if(isset($_SESSION['connected'])) { 
-
-    echo("OUAIS TU EST CONNECTE !");
-    echo($_SESSION['firstname']);
+  echo("OUAIS TU EST CONNECTE !");
+  echo($_SESSION['firstname']);
 }
 ?>
 

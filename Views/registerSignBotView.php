@@ -34,7 +34,7 @@
               </div>
 
               <div class="loginsigninbutton">
-                <button class="registerbutton border-red white red-background" name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Suivant</button>
+                <button class="registerbutton border-color-red color-white background-color-red" name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Suivant</button>
               </div>
             </form>
 
@@ -49,8 +49,8 @@
               <p class="signatureclean" id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</p>
                 
               <div class="loginsigninbutton">
-                  <button class="backupbutton border-red"><a class="SignIn red" href="">Retour</a></button>
-                  <button class="registerbutton border-red white red-background" name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+                  <button class="backupbutton border-color-red"><a class="SignIn color-red" href="">Retour</a></button>
+                  <button class="registerbutton border-color-red color-white background-color-red"><a class="name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
               </div>
 
           <?php } elseif(isset($_GET['finalRegister']) && $_SESSION['registerStatus'] == "DONE") {?>
@@ -117,7 +117,7 @@
           </div>
 
           <div class="loginsigninbutton">
-            <button class="registerbutton border-red white red-background" name="submit-registerSignBot" type="submit" id="submit-registerSignBot" data-submit="...Sending">Suivant</button>
+            <button class="registerbutton border-color-red color-white background-color-red" name="submit-registerSignBot" type="submit" id="submit-registerSignBot" data-submit="...Sending">Suivant</button>
           </div>
         </form>
 
