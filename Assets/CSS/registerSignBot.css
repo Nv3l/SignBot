@@ -1,13 +1,67 @@
 .registerpage {
-  width: 50%;
+  width: 100%;
   height: 100vh;
-  background-color: rgb(130, 201, 248);
-  padding-top: 10em;
+}
+
+h3.registerpage {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.register-container {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  margin-top: -100px;
+  margin-left: -200px;
+  width: 20%;
+}
+
+.firstname-form, .email-form, .phone-form, .password-form {
+  padding-top: 20px;
+}
+
+.registerbutton {
+  padding: 15px 20px;
+  border-radius: 40px;
+  height: 50%;
+  width: 50%;
+  cursor: pointer;
+}
+
+.backupbutton {
+  padding: 15px 20px;
+  border-radius: 40px;
+  width: 50%;
+  height: 50%;
+  margin-right: 50px;
+  cursor: pointer;
+  }
+
+
+.signature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bloc-mise-en-page {
   border: solid 1px;
-  width: 200px;
-  height: 150px;
-  margin: 20px;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  border-color: grey;
 }
+
+.signatureclean {
+  cursor: pointer;
+  color: grey;
+  font-size: 15px;
+}
+
+

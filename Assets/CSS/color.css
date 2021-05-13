@@ -5,12 +5,14 @@
     --white: #f2f5f7;
     --light-blue: #61DAFB;
     --salmon: #ff7E7E;
+    --red: red;
 }
 
 /* ========== STYLE ========== */
 body {
     background-color: var(--white);
 }
+
 
 .color-white {
     color: var(--white);
@@ -21,7 +23,7 @@ body {
 }
 
 .color-red {
-    color: red !important;
+    color: var(--red) !important;
 }
 
 .color-salmon {
@@ -33,7 +35,7 @@ body {
 }
 
 .border-color-red {
-    border-color: red !important;
+    border-color: var(--red) !important;
 }
 
 .border-color-salmon {
@@ -44,83 +46,26 @@ body {
     border-color: var(--black);
 }
 
+.background-color-white {
+    background-color: var(--white);
+}
+
 .background-color-salmon {
     background-color: var(--salmon);
 }
 
-.background-color-red-hover:hover {
-    background-color: red;
+.background-color-red {
+    background-color: var(--red);
 }
 
-
+.background-color-red-hover:hover {
+    background-color: var(--red);
+}
 
 /* ========== FORM ========== */
 
-#contact {
-    background-color: var(--white);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-
-}
-
-#contact textarea {
-    border-color: var(--grey);
-    background-color: var(--white);
-}
-
-#contact textarea:hover {
-    border-color: var(--grey);
-}
-
-#contact button[type="submit"] {
-    background-color: var(--green);
-    color: var(--white);
-}
-
-#contact button[type="submit"]:hover {
-    background-color: var(--green);
-}
-
-#contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px var(--black);
-}
-
-#contact button[type="button"] {
-    background-color: var(--green);
-    color: var(--white);
-}
-
-#contact button[type="button"]:hover {
-    background-color: var(--green);
-}
-
-#contact button[type="button"]:active {
-    box-shadow: inset 0 1px 3px var(--black);
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    border-color: var(--grey);
-}
-
-input[type="checkbox"]:checked:before {
-	left: calc(100% - 19px);
-	background-color: var(--green);
-}
-
-::-webkit-input-placeholder {
-    color: var(--grey);
-}
-
-:-moz-placeholder {
-    color: var(--grey);
-}
-
-::-moz-placeholder {
-    color: var(--grey);
-}
-
-:-ms-input-placeholder {
-    color: var(--grey);
+body {
+    background-color: white;
 }
 
 .bloc-mise-en-page {

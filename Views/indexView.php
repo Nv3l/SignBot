@@ -1,5 +1,5 @@
 
-<section class="indexpage">
+<section class="indexpage white-background">
 
 <div class="login-container">
     <form id="submit-login" action="Login.php" method="post">
@@ -19,9 +19,9 @@
                 <input placeholder="Votre mot de passe" id="password" name="password" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 4' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
             </div>
             </div>
-        <div class="loginSignInButton">
-            <button class="LoginButton" name="submit-login" type="submit" id="submit-login" data-submit="...Sending">Connexion</button>
-            <button class="SignInButton"><a class="SignIn" href="registerSignBot.php">Inscription</a></button>
+        <div class="loginsigninbutton">
+            <button class="loginbutton border-red background-red-button white" name="submit-login" type="submit" id="submit-login" data-submit="...Sending">Connexion</button>
+            <button class="signinbutton border-red"><a class="SignIn red" href="registerSignBot.php">Inscription</a></button>
         </div>
     </form>
 </div>
@@ -108,15 +108,11 @@ if(isset($_GET['signIn'])) {
 ?>
 
 <?php
-if(isset($_SESSION['connected'])) {
+if(isset($_SESSION['connected'])) { 
 
     echo("OUAIS TU EST CONNECTE !");
     echo($_SESSION['firstname']);
 }
 ?>
-
-
-
-
 
 </section>
