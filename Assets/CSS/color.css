@@ -4,12 +4,55 @@
     --grey: #888;
     --white: #f2f5f7;
     --light-blue: #61DAFB;
+    --salmon: #ff7E7E;
 }
 
 /* ========== STYLE ========== */
 body {
-    background-color: white;
+    background-color: var(--white);
 }
+
+.color-white {
+    color: var(--white);
+}
+
+.color-white-hover:hover {
+    color: var(--white) !important;
+}
+
+.color-red {
+    color: red !important;
+}
+
+.color-salmon {
+    color: var(--salmon);
+}
+
+.color-black {
+    color: var(--black);
+}
+
+.border-color-red {
+    border-color: red !important;
+}
+
+.border-color-salmon {
+    border-color: var(--salmon);
+}
+
+.border-color-black {
+    border-color: var(--black);
+}
+
+.background-color-salmon {
+    background-color: var(--salmon);
+}
+
+.background-color-red-hover:hover {
+    background-color: red;
+}
+
+
 
 /* ========== FORM ========== */
 
@@ -86,6 +129,11 @@ input[type="checkbox"]:checked:before {
 
 canvas {
     background-color: none;
+}
+
+/* ========== ACCOUNT ========== */
+.account-settings {
+    box-shadow: 0 10px 2em rgb(180, 180, 180);
 }
 
 /* ========== NAV BAR ========== */

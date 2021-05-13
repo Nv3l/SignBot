@@ -1,23 +1,57 @@
-.account {
-    width: 100px;
-    height: fit-content;
-    background-color: red;
+.account-settings {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3em;
+    border-radius: 25px;
 }
 
-
-.account-settings {
-    background-color: purple;
+.account-settings h3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .account-settings-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     list-style-type: none;
-    text-decoration: none;
 }
 
-.account-settings-items {
-    font-size: 15px;
-    color: white;
+.account-settings-list li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1.5em;
+}
+
+.account-settings-list li:last-child {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.account-settings-list li a {
+    border: solid 1px;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.account-settings-list li input {
+    border: solid 1px;
+    padding: 1em;
+    border-radius: 25px;
+}
+
+.account-settings-list li button {
+    border: solid 1px;
+    padding: 1em;
+    border-radius: 25px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.account-settings-logout-btn {
+    flex-direction: row !important;
 }
