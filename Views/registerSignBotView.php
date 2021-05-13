@@ -8,17 +8,33 @@
         <?php if(isset($_GET['registerJSEC']) && $_SESSION['registerStatus'] == "personal info done") { ?>
 
             <form id="registerJSEC" action="RegisterSignBot.php" method="post">
-              <h4>Informations de votre compte de messagerie "Je Suis En Cours"</h4>
+              <h3 class="registerpage">Informations de connexion de votre compte de messagerie qui reçoit les e-mails "Je Suis En Cours"</h3>
+                <div class="email-form">
+                  <label for="email_JSEC">E-mail</label>
+                    <div class="email-input">
+                      <img class="email-icon" src="Assets/Pictures/email.png" alt="">
+                      <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="email_JSEC" name="email_JSEC" type="email_JSEC" tabindex="1" required>
+                    </div>                
+                </div>
+
               <div>
-                <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="email_JSEC" name="email_JSEC" type="email_JSEC" tabindex="1" required>
-              </div>
-              <div>
-                <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password_JSEC" name="password_JSEC" tabindex="2" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-                <input placeholder="Confirmation" id="password_two_JSEC" name="password_two_JSEC" type="password" tabindex="3" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+                <div class="password-form">
+                  <label for="password">Mot de passe</label>
+                    <div class="password-input">
+                      <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                        <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password_JSEC" name="password_JSEC" tabindex="2" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
+                    </div>
+
+                    <div class="password-input">
+                      <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                        <input placeholder="Confirmation" id="password_two_JSEC" name="password_two_JSEC" type="password" tabindex="3" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
+                    </div>
+              
                 <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
               </div>
+
               <div>
-                <button name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Envoyer</button>
+                <button class="registerbutton border-red white red-background" name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Suivant</button>
               </div>
             </form>
 
