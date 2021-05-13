@@ -16,6 +16,12 @@
     flex-wrap: wrap;
 }
 
+h3.accountpage {
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
 .account-settings-list {
     list-style-type: none;
 }

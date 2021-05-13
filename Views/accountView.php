@@ -25,10 +25,10 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
       <h3>Mettre à jour l'adresse email SignBot</h3>
       <ul class="account-settings-list">
         <li>
-          <p class="color-black border-color-black">Adresse actuelle : <?php if(isset($_SESSION['connected'])) { echo($_SESSION['email']); } ?> </p>
+          <p class="color-black ">Adresse actuelle : <?php if(isset($_SESSION['connected'])) { echo($_SESSION['email']); } ?> </p>
         </li>
         <li>
-          <input placeholder="Nouvelle adresse mail" id="email" name="email" type="email" tabindex="3" required>
+          <input placeholder="Nouvelle adresse mail" id="email" name="email" type="email" tabindex="3">
         </li>
         <li>
           <button class="account-settings-back-btn color-salmon border-color-salmon" onclick="goBackAccountPage()">Retour</button>
@@ -67,7 +67,7 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
     <h3>Mettre à jour l'adresse email JeSuisEnCours</h3>
     <ul class="account-settings-list">
       <li>
-        <p class="color-black border-color-black">Adresse actuelle : <?php if(isset($_SESSION['connected'])) { echo($_SESSION['email_jsec']); } ?> </p>
+        <p class="color-black ">Adresse actuelle : <?php if(isset($_SESSION['connected'])) { echo($_SESSION['email_jsec']); } ?> </p>
       </li>
       <li>
         <input placeholder="Nouvelle adresse" id="email" name="email" type="email" tabindex="1" required>
@@ -118,28 +118,28 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 <?php } else { ?>
 
 <section class="account-settings">
-  <h3>Choisir une information à modifier</h3>
+  <h3 class="accountpage">Choisir une information à modifier</h3>
   <ul class="account-settings-list">
     <li>
-      <a class="color-black border-color-black" href="account.php?changePersonnalInfoSignBot"> <i class="fas fa-robot"></i> Modifier vos informations personnels (SignBot)</a>
+      <a class="color-black " href="account.php?changePersonnalInfoSignBot"> <i class="fas fa-robot"></i> Modifier vos informations personnels (SignBot)</a>
     </li>
     <li>
-      <a class="color-black border-color-black" href="account.php?changeEmailSignBot"> <i class="fas fa-robot"></i> Modifier mon adresse mail (SignBot)</a>
+      <a class="color-black " href="account.php?changeEmailSignBot"> <i class="fas fa-robot"></i> Modifier mon adresse mail (SignBot)</a>
     </li>
     <li>
-      <a class="color-black border-color-black" href="account.php?changePasswordSignBot"> <i class="fas fa-robot"></i> Modifier mon mot de passe (SignBot)</a>
+      <a class="color-black " href="account.php?changePasswordSignBot"> <i class="fas fa-robot"></i> Modifier mon mot de passe (SignBot)</a>
     </li>
     <li>
-      <a class="color-black border-color-black" href="account.php?changeEmailJeSuisEnCours"> <i class="fas fa-pen"></i> Modifier mon adresse mail (JeSuisEnCours)</a>
+      <a class="color-black " href="account.php?changeEmailJeSuisEnCours"> <i class="fas fa-pen"></i> Modifier mon adresse mail (JeSuisEnCours)</a>
     </li>
     <li>
-      <a class="color-black border-color-black" href="account.php?changePasswordJeSuisEnCours"> <i class="fas fa-pen"></i> Modifier mon mot de passe (JeSuisEnCours)</a>
+      <a class="color-black " href="account.php?changePasswordJeSuisEnCours"> <i class="fas fa-pen"></i> Modifier mon mot de passe (JeSuisEnCours)</a>
     </li>
     <li>
-      <a class="color-black border-color-black" href="account.php?manageBill"> <i class="fas fa-file-invoice"></i> Visualiser mes payements et factures</a>
+      <a class="color-black " href="account.php?manageBill"> <i class="fas fa-file-invoice"></i> Visualiser mes payements et factures</a>
     </li>
     <li>
-      <a class="account-settings-logout-btn color-red border-color-red background-color-red-hover color-white-hover" href="logout.php">Déconnection</a>
+      <a class="account-settings-logout-btn color-red border-color-red background-color-red-hover color-white-hover" href="logout.php">Déconnexion</a>
     </li>
   </ul>
 </section>
