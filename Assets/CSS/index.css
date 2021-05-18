@@ -1,0 +1,295 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+#index-intro {
+    padding-top: 10em;
+    margin-bottom: 10em;
+}
+
+
+.index-intro {
+    margin-left: 3em;
+    margin-right: 70em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.index-intro h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.index-intro>a {
+    border: solid 1px;
+    border-radius: 25px;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 20em;
+    margin-top: 1.5em;
+}
+
+.index-intro-chevron {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce-animation 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+#index-stats {
+    margin-top: 15em;
+}
+
+.index-stats {
+    text-align: center;
+}
+
+.index-stats h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.index-stats::after {
+    content: "";
+    display: flex;
+    margin-top: 1em;
+    padding: 1.5px;
+    width: 2em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-stats-list {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.index-stats-list li img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.index-stats-list li {
+    text-align: center;
+}
+
+.index-stats-list li p {
+    padding: 0.25em;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.index-stats-list li p:last-child {
+    font-weight: normal;
+    font-size: inherit;
+}
+
+#index-tutorial {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7em;
+    margin-left: 3em;
+    justify-content: space-around;
+}
+
+.index-tutorial {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.index-tutorial h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.index-tutorial h2::after {
+    content: "";
+    display: flex;
+    margin: 0.5em 0 0.5em 0;
+    padding: 1.5px;
+    width: 1em;
+    position: relative;
+}
+
+.index-tutorial p {
+    max-width: 500px;
+}
+
+#index-people {
+    margin: 4em;
+    margin-top: 10em;
+}
+
+.index-people h2 {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index-people::after {
+    content: "";
+    display: flex;
+    margin-top: 1em;
+    padding: 1.5px;
+    width: 2em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.index-people-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin-top: 2em;
+}
+
+.index-people-list li::after {
+    content: "";
+    display: flex;
+    margin: 0.5em 0 0.5em 0;
+    padding: 3px;
+    width: 35%;
+    position: relative;
+}
+
+.index-people-list li div {
+    margin: 1em;
+}
+
+.index-people-list li div>p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-people-list-comment {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.index-people-list-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.index-people-list-info div p {
+    margin: 0.5em;
+}
+
+.index-people-list-info img {
+    max-width: 5em;
+    border-radius: 50px;
+}
+
+.index-people-list-info-name, .index-people-list-info b{
+    font-weight: bold;
+}
+
+.index-people-list-info b {
+    margin-left: 0.5em;
+}
+
+#index-form {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.199), rgba(85, 85, 85)), url("../../Assets/Pictures/mountain.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 3em;
+}
+
+#index-form h2 {
+    padding-top: 9em;
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#index-form p {
+    margin-top: 1em;
+    font-size: 25px;
+    text-align: center;
+}
+
+#index-form form {
+    margin: 10em;
+    padding: 5em;
+    padding-top: 2.5em;
+}
+
+#index-form h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
+
+.index-form-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.index-form-input>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.index-form-input>div div{
+    margin-right: 5em;
+    max-width: 270px;
+}
+
+.index-form-input input {
+    margin-top: 5px;
+    border-radius: 0px;
+    border: none;
+    max-width: 250px;
+}
+
+#index-form button {
+    margin-top: 5em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0px;
+    border: none;
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#index-info {
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+@keyframes bounce-animation { 
+    0% { transform: translateY(0); }
+    30% { transform: translateY(-50px); }
+    50% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}

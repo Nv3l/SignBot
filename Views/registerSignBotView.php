@@ -12,7 +12,8 @@
                 <div class="email-form">
                   <label for="email_JSEC">E-mail</label>
                     <div class="email-input">
-                      <img class="email-icon" src="Assets/Pictures/email.png" alt="">
+                      <i class="far fa-envelope fa-2x"></i>
+                      <!-- <img class="email-icon" src="Assets/Pictures/email.png" alt=""> -->
                       <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="email_JSEC" name="email_JSEC" type="email_JSEC" tabindex="1" required>
                     </div>                
                 </div>
@@ -21,12 +22,14 @@
                 <div class="password-form">
                   <label for="password">Mot de passe</label>
                     <div class="password-input">
-                      <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                      <i class="fas fa-key fa-2x"></i>
+                      <!-- <img class="password-icon" src="Assets/Pictures/key.png" alt=""> -->
                         <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password_JSEC" name="password_JSEC" tabindex="2" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
                     </div>
 
                     <div class="password-input">
-                      <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                      <i class="fas fa-key fa-2x"></i>
+                      <!-- <img class="password-icon" src="Assets/Pictures/key.png" alt=""> -->
                         <input placeholder="Confirmation" id="password_two_JSEC" name="password_two_JSEC" type="password" tabindex="3" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
                     </div>
               
@@ -62,6 +65,8 @@
           } elseif($_SESSION['registerStatus'] == "personal info done") {
             header("location: registerSignBot.php?registerJSEC");
             
+          } elseif($_SESSION['registerStatus'] == "DONE") {
+            header("location: index.php");
           } ?>
 
         <?php } else { ?>
@@ -72,7 +77,8 @@
           <div class="name-form">
             <label for="name">Nom</label>
               <div class="name-input">
-                <img class="email-icon" src="Assets/Pictures/name.png" alt="">
+                <i class="far fa-address-card fa-2x"></i>
+                <!-- <img class="email-icon" src="Assets/Pictures/name.png" alt=""> -->
             <input placeholder="Votre nom" id="name" name="name" type="text" tabindex="1" required autofocus>
               </div>
           </div>
@@ -80,7 +86,8 @@
           <div class="firstname-form">
             <label for="firstname">Prénom</label>
               <div class="firstname-input">
-                <img class="firstname-icon" src="Assets/Pictures/name.png" alt="">
+                <i class="far fa-address-card fa-2x"></i>
+                <!-- <img class="firstname-icon" src="Assets/Pictures/name.png" alt=""> -->
             <input placeholder="Votre prénom" id="firstname" name="firstname" type="text" tabindex="2" required autofocus>
               </div>
           </div>
@@ -88,7 +95,8 @@
           <div class="email-form">
             <label for="email">E-mail</label>
               <div class="email-input">
-                <img class="email-icon" src="Assets/Pictures/email.png" alt="">
+                <i class="far fa-envelope fa-2x"></i>
+                <!-- <img class="email-icon" src="Assets/Pictures/email.png" alt=""> -->
             <input placeholder="Votre adresse email" id="email" name="email" type="text" tabindex="3" required autofemail tabindex="3" required>
               </div>
           </div>
@@ -96,7 +104,8 @@
           <div class="phone-form">
             <label for="phone">Téléphone</label>
               <div class="phone-input">
-                <img class="phone-icon" src="Assets/Pictures/smartphone.png" alt="">
+                <i class="fas fa-mobile-alt fa-2x"></i>
+                <!-- <img class="phone-icon" src="Assets/Pictures/smartphone.png" alt=""> -->
             <input placeholder="Votre numéro de téléphone (optionnel)" id="phone" name="phone" type="tel" tabindex="4" required>
               </div>
           </div>
@@ -104,12 +113,14 @@
           <div class="password-form">
             <label for="password">Mot de passe</label>
               <div class="password-input">
-                <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                <i class="fas fa-key fa-2x"></i>
+                <!-- <img class="password-icon" src="Assets/Pictures/key.png" alt=""> -->
             <input placeholder="Votre mot de passe" id="password" name="password" type="password" pattern="^\S{4,}$" tabindex="5" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
               </div>
 
               <div class="password-input">
-                <img class="password-icon" src="Assets/Pictures/key.png" alt="">
+                <i class="fas fa-key fa-2x"></i>
+                <!-- <img class="password-icon" src="Assets/Pictures/key.png" alt=""> -->
             <input placeholder="Confirmation" id="password_two" name="password_two" type="password" pattern="^\S{4,}$" tabindex="6" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
               </div>
 

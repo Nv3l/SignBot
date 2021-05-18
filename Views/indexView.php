@@ -1,106 +1,169 @@
+<section id="index-intro">
 
-<section class="indexpage background-color-white">
+  <div class="index-intro">
+    <h2>Ne loupez plus aucune signature avec SignBot !</h2>
+    <a href="login.php">Essayez SignBot</a>
+  </div>
 
-<div class="login-container">
-    <form id="submit-login" action="Login.php" method="post">
-        <h3 class="loginpage">Se connecter à votre compte</h3>
-        <div class="email-form">
-        <label for="email">E-mail</label>
-            <div class="email-input">
-                <img class="email-icon" src="Assets/Pictures/email.png" alt="">
-                    <input placeholder="Votre E-mail" id="email" name="email" type="text" tabindex="3" required autofemail" tabindex="3" required>
-            </div>
+  <a class="index-intro-chevron" href="#index-stats"><i class="fas fa-chevron-down fa-2x"></i></a>
+
+</section>
+
+
+
+<section id="index-stats">
+
+  <div class="index-stats">
+    <h2>Nos Statistiques</h2>
+  </div>
+
+  <ol class="index-stats-list">
+    <li>
+      <img src="Assets/Pictures/stars.png" alt="stars">
+      <p>89</p>
+      <p>Etudiant satisfaits</p>
+    </li>
+    <li>
+      <img src="Assets/Pictures/monument.png" alt="monument">
+      <p>2594</p>
+      <p>Mails Signés</p> 
+    </li>
+    <li>
+      <img src="Assets/Pictures/globe.png" alt="globe">
+      <p>854</p>
+      <p>Heures d'absences évités</p>
+    </li>
+  </ol>
+
+</section>
+
+
+
+<section id="index-tutorial">
+
+  <div class="index-tutorial">
+    <h2>Notre vidéo Tutoriel</h2>
+    
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus quibusdam voluptate pariatur nam ad saepe libero laudantium voluptatibus perspiciatis, nihil quas vel eaque ullam fuga doloremque esse ipsum! Inventore, ducimus? Voluptatem magnam quas odio voluptate qui reiciendis delectus libero architecto culpa! Fugit minus quasi eligendi autem facere officiis! Nostrum hic vel voluptatibus minima tenetur repudiandae quasi officiis quod iure quo!</p>
+  </div>
+
+  <iframe width="960" height="720" src="https://www.youtube.com/embed/YSj6vEojT40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</section>
+
+
+
+<section id="index-people">
+
+  <div class="index-people">
+    <h2>Ils nous font confiances</h2>
+  </div>
+
+  <ol class="index-people-list">
+    <li>
+      <div>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="index-people-list-comment">
+        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique expedita commodi minus omnis fuga reiciendis, voluptatibus nulla"</p>
+      </div>
+
+      <div class="index-people-list-info">
+        <img src="Assets/Pictures/eric.jpg" alt="eric">
+        <div>
+          <p class="index-people-list-info-name">NAME + SURNAME</p>
+          <p>PROFESSION <b>COMPANY</b></p>
         </div>
+      </div>
+    </li>
 
-        <div class="password-form">
-            <label for="password">Mot de passe</label>
-            <div class="password-input">
-                <img class="password-icon" src="Assets/Pictures/key.png" alt="">
-                <input placeholder="Votre mot de passe" id="password" name="password" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 4' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-            </div>
-            </div>
-        <div class="loginsigninbutton">
-            <button class="loginbutton border-color-salmon background-color-salmon color-white" name="submit-login" type="submit" id="submit-login" data-submit="...Sending">Connexion</button>
-            <button class="signinbutton border-color-salmon"><a class="SignIn color-salmon" href="registerSignBot.php">Inscription</a></button>
+    <li>
+      <div>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+
+      <div class="index-people-list-comment">
+        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique expedita commodi minus omnis fuga reiciendis, voluptatibus nulla"</p>
+      </div>
+
+      <div class="index-people-list-info">
+        <img src="Assets/Pictures/segolene-royal.jpg" alt="segolene-royal">
+        <div>
+          <p class="index-people-list-info-name">NAME + SURNAME</p>
+          <p>PROFESSION <b>COMPANY</b></p>
         </div>
-    </form>
-</div>
+      </div>
+    </li>
 
-<?php
+    <li>
+      <div>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
 
-if(isset($_GET['signIn'])) {
-  ?>
-  
-<div class="container">  
+      <div class="index-people-list-comment">
+        <p>"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique expedita commodi minus omnis fuga reiciendis, voluptatibus nulla"</p>
+      </div>
 
-<?php if(isset($_GET['registerJSEC'])) { ?>
-<form id="registerJSEC" action="RegisterSignBot.php" method="post">
-  <h4>Informations de votre compte scolaire de messagerie</h4>
-  <div>
-    <input placeholder="Votre email utilisé pour 'Je Suis En Cours'" id="email_JSEC" name="email_JSEC" type="email_JSEC" tabindex="1" required>
-  </div>
-  <div>
-    <input placeholder="Votre mot de passe 'Je Suis En Cours'" id="password_JSEC" name="password_JSEC" tabindex="2" type="password" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-    <input placeholder="Confirmation" id="password_two_JSEC" name="password_two_JSEC" type="password" tabindex="3" pattern="^\S{4,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
-    <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
-  </div>
-  <div>
-    <button name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Envoyer</button>
-  </div>
-</form>
+      <div class="index-people-list-info">
+        <img src="Assets/Pictures/patrick-balkany.jpeg" alt="patrick-balkany">
+        <div>
+          <p class="index-people-list-info-name">NAME + SURNAME</p>
+          <p>PROFESSION <b>COMPANY</b></p>
+        </div>
+      </div>
+    </li>
+  </ol>
 
-<?php } else if(isset($_GET['registerSign'])) { ?>
+</section>
 
-<h4>Dessinnez votre signature</h4>
-<div class="signature">
-  <div class="bloc-mise-en-page">
-    <canvas id="canvas"></canvas>
-  </div>
-  <button id="bt-clear" name="clear" type="button" id="clear-button">Nettoyer la signature</button>
-</div>
-<button name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
 
-<?php } else { ?>
-<form id="registerSignBot" action="RegisterSignBot.php" method="post">
-  <h3>Formulaire SignBot</h3>
-  <h4>Formulaire à remplir en nous fournissant vos informations de bases, permettant au bot de signer à votre place.</h4>
-  <div>
-    <input placeholder="Votre nom" id="name" name="name" type="text" tabindex="1" required autofocus>
-  </div>
-  <div>
-    <input placeholder="Votre prénom" id="firstname" name="firstname" type="text" tabindex="2" required autofocus>
-  </div>
-  <div>
-    <input placeholder="Votre adresse email" id="email" name="email" type="text" tabindex="3" required autofemail tabindex="3" required>
-  </div>
-  <div>
-    <input placeholder="Votre numéro de téléphone (optionnel)" id="phone" name="phone" type="tel" tabindex="4" required>
-  </div>
-  <div>
-    <input placeholder="Votre mot de passe" id="password" name="password" type="password" pattern="^\S{4,}$" tabindex="5" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Votre mot de passe doit contenir au moins 6' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required>
-    <input placeholder="Confirmation" id="password_two" name="password_two" type="password" pattern="^\S{4,}$" tabindex="6" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Les mots de passes ne sont pas identiques, veuillez réessayer' : '');" required>
-    <input type="checkbox" onclick="myFunction()">Montrer mon mot de passe</input>
-  </div>
-  <div>
-    <button name="submit-registerSignBot" type="submit" id="submit-registerSignBot" data-submit="...Sending">Envoyer</button>
-  </div>
-</form>
-<?php } ?>
 
-<?php if(isset($_GET['finalRegister'])) { ?>
-<h1>C GOOD</h1>
-<?php }; ?>
+<section id="index-form">
 
-</div>
-<?php
-};
-?>
+  <h2>VOTRE BOT DE SIGNATURE</h2>
+  <p>Nous sommes là pour vous éviter toute absences sur Je Suis En Cours</p>
 
-<?php
-if(isset($_SESSION['connected'])) { 
-  echo("OUAIS TU EST CONNECTE !");
-  echo($_SESSION['firstname']);
-}
-?>
+  <form action="" method="POST">
+    <h3>Obtenir le SignBot ?</h3>
+    <div class="index-form-input">
+      <div>
+        <div>
+          <label for="name">Nom*</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="surname">Prénom*</label>
+          <input type="text" name="surname" id="surname">
+        </div>
+      </div>
+      <div>
+        <div>
+          <label for="email">Email*</label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div>
+          <label for="tel">Téléphone*</label>
+          <input type="tel" name="tel" id="tel">
+        </div>
+      </div>
+    </div>
+    <button type="submit">Rejoindre la communauté</button>
+  </form>
 
+</section>
+
+<section id="index-info">
+  <p>Copyright &copy; SignBot - 2021</p>
 </section>

@@ -16,7 +16,7 @@ a:link {
 nav{
     height: 6rem;
     width: 100vw;
-    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2); */
     display: flex;
     position: fixed;
     z-index: 10;
@@ -28,8 +28,9 @@ nav{
     text-align: center;
 }
 .logo img {
+    filter: brightness(0%);
     height: 5rem;
-    width: 5rem;
+    width: 7rem;
 }
 
 /*Styling Links*/
@@ -166,4 +167,21 @@ nav{
 }
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.navbar-index-link {
+    display: flex;
+    list-style: none;
+    width: 88vw;
+    padding: 0 0.7vw;
+    justify-content: flex-end;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.navbar-index-link-list a {
+    padding: 1em;
+    border: 1px solid;
+    border-radius: 15px;
+    margin-right: 1em;
 }

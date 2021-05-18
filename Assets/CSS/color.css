@@ -85,48 +85,139 @@ canvas {
 }
 
 /* ========== NAV BAR ========== */
-nav {
-    color: var(--white);
-    background-color: var(--black);
-}
-
-.nav-links li a:hover {
-    color: var(--light-blue);
-}
-
-.login-button{
-    border-color: var(--white);
-}
-
-.login-button:hover{
-    color: var(--black);
-    background-color: var(--white);
-    border-color: var(--white);
-}
-
-.join-button{
-    color: var(--black);
-    background-color: var(--light-blue);
-    border-color: var(--light-blue);
-}
-
-.join-button:hover{
-    color: var(--white);
-    border-color: var(--white);
-}
-
 .hamburger div{
-    background-color: var(--white);
-}
-
-.nav-links {
     background-color: var(--black);
 }
 
 .nav-links li a{
-    color: var(--white);
+    color: var(--black);
 }
+
+.hamburger div {
+    background-color: var(--black);
+}
+
+.hamburger.toggle div {
+    background-color: var(--white);
+}
+
+.nav-links.open {
+    background-color: var(--black);
+}
+
+.nav-links.open li a {
+    color: var(--white) !important;
+}
+
+.nav-links li a:hover {
+    color: var(--salmon);
+}
+
 
 .nav-links li button{
     color: var(--white);
+}
+
+.navbar-index {
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+/* ========== INDEX ========== */
+
+.index-intro a {
+    border-color: var(--salmon);
+    color: var(--white);
+    background-color: var(--salmon);
+}
+
+.index-intro a:hover {
+    color: var(--salmon);
+    background-color: var(--white);
+}
+
+.index-intro-chevron {
+    color: var(--black);
+}
+
+.index-stats::after {
+    background-color: var(--grey)
+}
+
+.index-tutorial h2::after {
+    background-color: var(--grey);
+}
+
+.index-people::after {
+    background-color: var(--grey);
+}
+
+#index-people i.fa-star {
+    color: gold;
+}
+
+.index-people-list-comment p {
+    color: var(--grey);
+}
+
+.index-people-list li::after {
+    background-color: var(--salmon);
+}
+
+#index-form h2 {
+    color: var(--white);
+}
+
+#index-form p {
+    color: var(--white);
+}
+
+#index-form form {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#index-form h3 {
+    color: var(--white);
+}
+
+.index-form-input label {
+    color: var(--white);
+}
+
+.index-form-input input {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--white)
+}
+
+#index-form button {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+#index-info {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.navbar-index-link-list-login {
+    border-color: var(--white) !important;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.navbar-index-link-list-login:hover {
+    border-color: var(--salmon) !important;
+    background-color: var(--salmon);
+    color: var(--white);
+}
+
+.navbar-index-link-list-singin {
+    border-color: var(--salmon) !important;
+    background-color: var(--salmon);
+    color: var(--white);
+}
+
+.navbar-index-link-list-singin:hover {
+    border-color: var(--white) !important;
+    background-color: var(--white);
+    color: var(--black);
 }
