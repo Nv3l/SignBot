@@ -46,7 +46,7 @@ require 'Functions/database.fn.php';
                 <li><a href="index.php">Accueil</a></li>
                 <li><a href="account.php">Mon compte</a></li>
             <?php } elseif(($_SERVER['PHP_SELF'] == "/SignBot/login.php") || ($_SERVER['PHP_SELF'] == "/Signbot/login.php")) { ?> 
-                <li><a href="index.php">Acceuil</a></li>
+                <li><a href="index.php">Accueil</a></li>
             <?php } else { ?>
                 <li class="navbar-index-link-list"><a class="navbar-index-link-list-login" href="login.php">Se connecter</a></li>
                 <li class="navbar-index-link-list"><a class="navbar-index-link-list-singin" href="registerSignBot.php">S'inscrire</a></li>
