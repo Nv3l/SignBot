@@ -21,9 +21,11 @@ require 'Functions/database.fn.php';
     <link rel="stylesheet" href="Assets/CSS/index.css">
 </head>
 <body>
-    <?php if(($_SERVER['PHP_SELF'] == "/SignBot/index.php") || ($_SERVER['PHP_SELF'] == "/Signbot/index.php")) { ?> 
+    <?php if(isset($_SESSION['connected']) && ($_SERVER['PHP_SELF'] == "/SignBot/index.php") || ($_SERVER['PHP_SELF'] == "/Signbot/index.php")) { ?> 
 
     <nav class="navbar-index">
+    <?php } elseif(($_SERVER['PHP_SELF'] == "/SignBot/index.php") || ($_SERVER['PHP_SELF'] == "/Signbot/index.php")) { ?>
+    <nav>
     <?php } else { ?>
     <nav>
     <?php } ?>

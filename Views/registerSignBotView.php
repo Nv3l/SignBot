@@ -53,7 +53,7 @@
                 
               <div class="loginsigninbutton">
                   <button class="backupbutton border-color-salmon"><a class="SignIn color-salmon" href="">Retour</a></button>
-                  <button class="registerbutton border-color-salmon color-white background-color-salmon"><a class="name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
+                  <button class="registerbutton border-color-salmon color-white background-color-salmon"><a name="submit-registerSign" id="submit-registerSign" data-submit="...Sending">Envoyer</button>
               </div>
 
           <?php } elseif(isset($_GET['finalRegister']) && $_SESSION['registerStatus'] == "DONE") {?>
