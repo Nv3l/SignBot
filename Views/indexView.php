@@ -164,6 +164,7 @@
 
 </section>
 
+<!-- copyrights -->
 <section id="index-info">
   <p>Copyright &copy; SignBot - 2021</p>
 </section>
