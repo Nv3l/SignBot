@@ -1,5 +1,6 @@
 <?php
 
+/* inscription des infos dans la bdd */
 function registerSignBot($name, $first_name, $phone, $email, $password) {
 
     $db = dbConnect();
@@ -38,7 +39,7 @@ function registerSignBot($name, $first_name, $phone, $email, $password) {
 
 }
 
-
+/* register mail et mdp */
 function registerJSEC($email_jsec, $password_jsec) {
 
     $db = dbConnect();
@@ -65,6 +66,7 @@ function registerJSEC($email_jsec, $password_jsec) {
 
 }
 
+/* register de la signature */
 function saveSignature($signature) {
 
     define('UPLOAD_DIR', 'Signature/');

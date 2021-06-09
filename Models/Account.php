@@ -1,5 +1,6 @@
 <?php
 
+/* majs nom et prenom */
 function updatePersonnalInformations($name, $first_name) {
 
     $db = dbConnect();
@@ -22,6 +23,7 @@ function updatePersonnalInformations($name, $first_name) {
     return $updatePersonnalInformations;
 }
 
+/* majs mail signbot */
 function updateEmailSignBot($email) {
     $db = dbConnect();
 
@@ -42,6 +44,7 @@ function updateEmailSignBot($email) {
     return $updateEmailSignBot;
 }
 
+/* majs mdp signbot */
 function updatePasswordSignBot($current_password, $new_password) {
 
     $db = dbConnect();
@@ -82,6 +85,7 @@ function updatePasswordSignBot($current_password, $new_password) {
 
 }
 
+/* majs mail jsec */
 function updateEmailJSEC($email_jsec) {
 
     $db = dbConnect();
@@ -102,6 +106,7 @@ function updateEmailJSEC($email_jsec) {
 
 }
 
+/* majs password jsec */
 function updatePasswordJSEC($password_jsec) {
 
     $db = dbConnect();

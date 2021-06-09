@@ -1,5 +1,6 @@
 <?php
 
+/* recuperer mail et mdp dans bdd */
 function connectUser($email, $password) {
 
     $db = dbConnect();
