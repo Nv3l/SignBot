@@ -27,6 +27,7 @@
     </div>
 </section>
 
+<!-- message pour valider connexion -->
 <?php
 
 if(isset($_SESSION['connected'])) {

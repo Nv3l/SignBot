@@ -1,6 +1,6 @@
 <section class="registerpage">
 
-
+<!-- inscription -->
 <div class="register-container">
 
     <?php if(isset($_SESSION['connected'])) {?>
@@ -40,7 +40,7 @@
                 <button class="registerbutton border-color-salmon color-white background-color-salmon" name="submit-registerJSEC" type="submit" id="submit-registerJSEC" data-submit="...Sending">Suivant</button>
               </div>
             </form>
-
+<!-- dessin de signature -->
         <?php } elseif(isset($_GET['registerSign']) && $_SESSION['registerStatus'] == "JSEC done") { ?>
 
             <h3 class="registerpage">Dessinez votre signature</h3>
@@ -70,7 +70,8 @@
           } ?>
 
         <?php } else { ?>
-
+        
+<!-- formulaire d'inscription -->
         <form id="registerSignBot" action="RegisterSignBot.php" method="post">
           <h3 class="registerpage">Se créer un compte</h3>
 

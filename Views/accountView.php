@@ -2,6 +2,7 @@
 
 if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 
+<!-- modifier des infos dans la bdd -->
   <form class="account-settings" action="Account.php" method="post" onsubmit="return confirm('Etes vous sur de vouloir valider ?');">
     <h3>Changez vos informations personnelles</h3>
     <ul class="account-settings-list">
@@ -21,6 +22,7 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 <?php
 } elseif(isset($_GET['changeEmailSignBot'])) { ?>
 
+<!-- maj mail -->
     <form class="account-settings" action="Account.php" method="post">
       <h3>Mettre à jour l'adresse email SignBot</h3>
       <ul class="account-settings-list">
@@ -40,6 +42,7 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 <?php
 } elseif(isset($_GET['changePasswordSignBot'])) { ?>
 
+<!-- maj mdp -->
   <form class="account-settings" action="Account.php" method="post">
     <h3>Changez de mot de passe SignBot</h3>
     <ul class="account-settings-list">
@@ -62,7 +65,8 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 
 <?php
 } elseif(isset($_GET['changeEmailJeSuisEnCours'])) { ?>
-  
+
+  <!-- maj mail je suis en cours -->
   <form class="account-settings" action="Account.php" method="post">
     <h3>Mettre à jour l'adresse email JeSuisEnCours</h3>
     <ul class="account-settings-list">
@@ -83,6 +87,7 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 <?php
 } elseif(isset($_GET['changePasswordJeSuisEnCours'])) { ?>
 
+<!-- majs mdp je suis en cours -->
   <form class="account-settings" action="Account.php" method="post">
     <h3>Changez de mot de passe JeSuisEnCours</h3>
     <ul class="account-settings-list">
@@ -105,6 +110,8 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 <?php
 } elseif(isset($_GET['manageBill'])) { ?>
 
+<!-- dernières factures -->
+
   <br>
   <br>
   <br>
@@ -117,6 +124,7 @@ if(isset($_GET['changePersonnalInfoSignBot'])) { ?>
 
 <?php } else { ?>
 
+<!-- icon pour ligne -->
 <section class="account-settings">
   <h3 class="accountpage">Choisir une information à modifier</h3>
   <ul class="account-settings-list">
