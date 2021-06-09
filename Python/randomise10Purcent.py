@@ -1,3 +1,4 @@
+# random la signature pour être moins linéaire
 import random as r
 
 def randomise10Purcent(value):

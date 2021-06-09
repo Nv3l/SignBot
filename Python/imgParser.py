@@ -7,7 +7,7 @@ from selenium.webdriver import ActionChains
 
 
 
-
+# recuperer les pixels noirs du tracé de la signature
 def getBlackPixel(picture, actions, canvas):
 
     # listPixels = []

@@ -1,9 +1,11 @@
 import mysql.connector
 
+# connexion à la bdd
 mydb = mysql.connector.connect(host="localhost", user="root", passwd="", database="signbot")
 
 myCursor = mydb.cursor()
 
+# recuperer information jsec dans bdd
 def getCreditentialsJSEC():
 
     query = "SELECT id,email_jsec,password_jsec FROM users WHERE register_done='DONE';"
@@ -12,6 +14,7 @@ def getCreditentialsJSEC():
 
     return myCursor.fetchall()
 
+# recuperer signature dans bdd
 def getSignatureImagePath(id):
 
     query = "SELECT signature_jsec FROM users WHERE id='" + str(id) + "';"
