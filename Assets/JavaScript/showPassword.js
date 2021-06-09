@@ -1,4 +1,4 @@
-function passwordShowJeSuisEnCours() {
+function passwordShowJeSuisEnCours() {      // montrer password de JeSuisEnCours
     var x = document.getElementById("password_two");
     if (x.type === "password") {
       x.type = "text";
@@ -7,7 +7,7 @@ function passwordShowJeSuisEnCours() {
     }
   }
 
-  function passwordShowSignBot() {
+  function passwordShowSignBot() {    // montrer password de Signbot
     var x = document.getElementById("password_two");
     if (x.type === "password") {
       x.type = "text";
@@ -16,7 +16,7 @@ function passwordShowJeSuisEnCours() {
     }
   }
 
-  function passwordShowSignIn() {
+  function passwordShowSignIn() {     // montrer password de l'inscription
     var x = document.getElementById("password");
     if (x.type === "password") {
       x.type = "text";
@@ -25,7 +25,7 @@ function passwordShowJeSuisEnCours() {
     }
   }
   
-  function passwordShowFirstForm() {
+  function passwordShowFirstForm() {      // montrer password du premier formulaire
     var x = document.getElementById("password_one");
     if (x.type === "password") {
       x.type = "text";

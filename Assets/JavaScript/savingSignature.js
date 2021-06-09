@@ -1,4 +1,4 @@
-$(function(){  
+$(function(){       // sauvegarder la signature
     $("#submit-registerSign").click(function(){
         html2canvas($("#canvas"), {  
             onrendered: function(canvas) { 
