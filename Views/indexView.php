@@ -1,5 +1,5 @@
 <section id="index-intro">
-
+<!-- intro -->
   <div class="index-intro">
     <h2>Ne loupez plus aucune signature avec SignBot !</h2>
     <a href="login.php">Essayez SignBot</a>
@@ -9,7 +9,7 @@
 
 </section>
 
-
+<!-- stats -->
 
 <section id="index-stats">
 
@@ -37,7 +37,7 @@
 
 </section>
 
-
+<!-- vidéo tuto -->
 
 <section id="index-tutorial">
 
@@ -51,7 +51,7 @@
 
 </section>
 
-
+<!-- reviews clients -->
 
 <section id="index-people">
 
@@ -128,7 +128,7 @@
 
 </section>
 
-
+<!-- formulaire de contact -->
 
 <section id="index-form">
 
